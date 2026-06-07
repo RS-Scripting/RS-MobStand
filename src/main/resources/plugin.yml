@@ -1,0 +1,27 @@
+name: RS-MobStand
+prefix: RS-MobStand
+version: 1.0.0
+main: com.rsscripting.mobstand.RSMobStandPlugin
+api-version: '1.21'
+
+author: RSScripting
+
+commands:
+  rsms:
+    description: RS MobStand main command
+    usage: /rsms reload
+    permission: rsmobstand.admin
+
+permissions:
+
+  rsmobstand.use:
+    description: Allows use of RS MobStand
+    default: true
+
+  rsmobstand.admin:
+    description: Admin access for RS MobStand
+    default: op
+
+  rsmobstand.bypasslimits:
+    description: Bypass MobStand placement limits
+    default: op

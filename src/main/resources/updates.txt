@@ -1,0 +1,15 @@
+=========================================
+1.0.0 (05/28/2026)
+=========================================
+
+[ADDED]
+- Added kill-all support to adult and baby configs.
+
+[FIXED]
+- Fixed admin reload not reloading mob configs.
+- Fixed adult/baby filters toggle bug.
+- Fixed kill-all mobs appearing disabled in menus.
+
+[CHANGED]
+- Kill-all mobs now remain visually enabled.
+- Added admin override lore to forced-enabled mobs.
