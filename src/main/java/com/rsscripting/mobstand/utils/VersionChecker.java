@@ -1,7 +1,11 @@
 package com.rsscripting.mobstand.utils;
 
 import com.rsscripting.mobstand.RSMobStandPlugin;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -14,7 +18,7 @@ public class VersionChecker {
             "Unknown";
 
     private static final String VERSION_URL =
-            "https://raw.githubusercontent.com/RS-Scripting/RS-MobStand/main/version.txt";
+            "https://raw.githubusercontent.com/RS-Scripting/RS-MobStand/main/pom.xml";
 
     public VersionChecker(
             RSMobStandPlugin plugin
@@ -36,28 +40,43 @@ public class VersionChecker {
 
                             try {
 
-                                /*
-                                |--------------------------------------------------------------------------
-                                | READ VERSION FILE
-                                |--------------------------------------------------------------------------
-                                */
-
+/*
+|--------------------------------------------------------------------------
+| READ VERSION FROM POM
+|--------------------------------------------------------------------------
+*/
                                 URL url =
                                         new URL(
                                                 VERSION_URL
                                         );
 
-                                BufferedReader reader =
-                                        new BufferedReader(
-                                                new InputStreamReader(
-                                                        url.openStream()
-                                                )
+                                DocumentBuilderFactory factory =
+                                        DocumentBuilderFactory.newInstance();
+
+                                DocumentBuilder builder =
+                                        factory.newDocumentBuilder();
+
+                                Document document =
+                                        builder.parse(
+                                                url.openStream()
                                         );
 
-                                latestVersion =
-                                        reader.readLine();
+                                document.getDocumentElement()
+                                        .normalize();
 
-                                reader.close();
+                                NodeList versionNodes =
+                                        document.getElementsByTagName(
+                                                "version"
+                                        );
+
+                                if (versionNodes.getLength() > 0) {
+
+                                    latestVersion =
+                                            versionNodes.item(0)
+                                                    .getTextContent()
+                                                    .trim();
+
+                                }
 
                                 /*
                                 |--------------------------------------------------------------------------
