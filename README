@@ -1,0 +1,48 @@
+# RS-MobStand
+
+RS-MobStand is a Minecraft server plugin that provides automated mob farming through configurable Mob Stands.
+
+Part of the RS ecosystem developed by RSScripting.
+
+## Features
+
+- Automated mob drop generation
+- Adult and Baby mob filters
+- Radius controls
+- Leave Alive options
+- Conversion support
+- Dynamic GUI menus
+- SQLite data storage
+- Chunk-safe operation
+- Admin tools
+- Performance-focused design
+
+## Commands
+
+| Command | Description |
+|----------|-------------|
+| /rsms | Opens the Mob Stand menu |
+| /rsms admin | Opens the admin menu |
+
+## Permissions
+
+| Permission | Description |
+|------------|-------------|
+| rs.mobstand.use | Allows use of Mob Stands |
+| rs.mobstand.admin | Administrative access |
+
+## RS Ecosystem
+
+- RS-MobStand - Resource generation
+- RS-ItemMagnet - Item collection and routing
+- RS-Auger - Vertical item transport
+- RS-Warehouse - Large-scale storage
+
+## Contributors
+
+- Big Pappa
+- Atlas
+
+## Status
+
+Private development repository.
