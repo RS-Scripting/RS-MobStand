@@ -1,48 +1,86 @@
 # RS-MobStand
 
-RS-MobStand is a Minecraft server plugin that provides automated mob farming through configurable Mob Stands.
+> Automated mob farming for modern Minecraft servers.
 
-Part of the RS ecosystem developed by RSScripting.
+Part of the RS Ecosystem by RSScripting.
+
+---
+
+## Overview
+
+RS-MobStand allows players to generate mob drops through configurable Mob Stands without the need for traditional mob grinders.
+
+Built with performance, scalability, and automation in mind, RS-MobStand serves as the resource generation layer of the RS Ecosystem.
+
+---
+
+## Ecosystem Flow
+
+RS-MobStand
+     ↓
+RS-ItemMagnet
+     ↓
+RS-Auger
+     ↓
+RS-Warehouse
+
+Generate → Collect → Transport → Store
+
+---
 
 ## Features
 
-- Automated mob drop generation
-- Adult and Baby mob filters
-- Radius controls
-- Leave Alive options
-- Conversion support
-- Dynamic GUI menus
-- SQLite data storage
-- Chunk-safe operation
-- Admin tools
-- Performance-focused design
+✔ Automated mob drop generation
 
-## Commands
+✔ Adult and baby mob filters
 
-| Command | Description |
-|----------|-------------|
-| /rsms | Opens the Mob Stand menu |
-| /rsms admin | Opens the admin menu |
+✔ Radius controls
 
-## Permissions
+✔ Leave Alive options
 
-| Permission | Description |
-|------------|-------------|
-| rs.mobstand.use | Allows use of Mob Stands |
-| rs.mobstand.admin | Administrative access |
+✔ Dynamic GUI menus
 
-## RS Ecosystem
+✔ SQLite persistence
 
-- RS-MobStand - Resource generation
-- RS-ItemMagnet - Item collection and routing
-- RS-Auger - Vertical item transport
-- RS-Warehouse - Large-scale storage
+✔ Chunk-safe operation
+
+✔ Performance-focused design
+
+✔ RS ecosystem integration
+
+---
+
+## Screenshots
+
+*Coming Soon*
+
+---
+
+## Project Status
+
+🚧 Active Development
+
+Current Repository Status:
+- Stable
+- Private
+- Under active development
+
+---
 
 ## Contributors
 
-- Big Pappa
-- Atlas
+### Big Pappa
+Project Creator
 
-## Status
+### Atlas
+Architecture, Design, Development Support
 
-Private development repository.
+---
+
+## Future RS Ecosystem
+
+- RS-MobStand
+- RS-ItemMagnet
+- RS-Auger
+- RS-Warehouse
+- RS-PluginTemplate
