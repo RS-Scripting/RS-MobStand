@@ -1,6 +1,6 @@
 name: RS-MobStand
 prefix: RS-MobStand
-version: 1.0.0
+version: ${project.version}
 main: com.rsscripting.mobstand.RSMobStandPlugin
 api-version: '1.21'
 

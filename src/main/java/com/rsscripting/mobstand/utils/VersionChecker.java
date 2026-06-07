@@ -14,7 +14,7 @@ public class VersionChecker {
             "Unknown";
 
     private static final String VERSION_URL =
-            "https://raw.githubusercontent.com/russelburgraymond/RS-MobStand/main/version.txt";
+            "https://raw.githubusercontent.com/RS-Scripting/RS-MobStand/main/version.txt";
 
     public VersionChecker(
             RSMobStandPlugin plugin

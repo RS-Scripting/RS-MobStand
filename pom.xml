@@ -13,7 +13,7 @@
 
     <groupId>com.rsscripting</groupId>
     <artifactId>rs-mobstand</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>RS-MobStand</name>
 
@@ -59,7 +59,14 @@
     <build>
 
         <!-- Final Jar Name -->
-        <finalName>RS-MobStand-1.0.0</finalName>
+        <finalName>${project.name}-${project.version}</finalName>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
 
         <plugins>
 
