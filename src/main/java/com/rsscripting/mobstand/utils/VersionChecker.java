@@ -146,8 +146,8 @@ public class VersionChecker {
 
                             catch (Exception exception) {
 
-                                plugin.getLogger().warning(
-                                        "Could not check for updates."
+                                plugin.getLogger().info(
+                                        "Unable to check for updates."
                                 );
 
                             }

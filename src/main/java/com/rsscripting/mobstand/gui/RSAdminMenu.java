@@ -174,7 +174,24 @@ public class RSAdminMenu {
                             + currentVersion
             );
 
-            if (!currentVersion.equalsIgnoreCase(
+            if (latestVersion == null) {
+
+                lore.add(
+                        ChatColor.GRAY
+                                + "Latest Version: "
+                                + ChatColor.WHITE
+                                + "Unknown"
+                );
+
+                lore.add("");
+
+                lore.add(
+                        ChatColor.RED
+                                + "Unable To Check"
+                );
+
+            }
+            else if (!currentVersion.equalsIgnoreCase(
                     latestVersion
             )) {
 
