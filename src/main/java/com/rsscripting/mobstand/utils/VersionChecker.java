@@ -94,7 +94,9 @@ public class VersionChecker {
                                 |--------------------------------------------------------------------------
                                 */
 
-                                if (!currentVersion.equalsIgnoreCase(
+                                if (!latestVersion.equalsIgnoreCase(
+                                        "Unknown"
+                                ) && !currentVersion.equalsIgnoreCase(
                                         latestVersion
                                 )) {
 
