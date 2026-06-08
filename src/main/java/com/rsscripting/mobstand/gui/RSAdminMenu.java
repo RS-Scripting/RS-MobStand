@@ -174,11 +174,14 @@ public class RSAdminMenu {
                             + currentVersion
             );
 
-            if (latestVersion == null) {
+            if (latestVersion == null
+                    || latestVersion.equalsIgnoreCase(
+                    "Unknown"
+            )) {
 
                 lore.add(
                         ChatColor.GRAY
-                                + "Latest Version: "
+                                + "Latest: "
                                 + ChatColor.WHITE
                                 + "Unknown"
                 );
@@ -187,7 +190,7 @@ public class RSAdminMenu {
 
                 lore.add(
                         ChatColor.RED
-                                + "Unable To Check"
+                                + "Status: Unable To Check"
                 );
 
             }
@@ -197,7 +200,7 @@ public class RSAdminMenu {
 
                 lore.add(
                         ChatColor.GRAY
-                                + "Latest Version: "
+                                + "Latest: "
                                 + ChatColor.WHITE
                                 + latestVersion
                 );
@@ -206,16 +209,24 @@ public class RSAdminMenu {
 
                 lore.add(
                         ChatColor.GREEN
-                                + "Update Available!"
+                                + "Status: Update Available"
                 );
 
             }
-
             else {
 
                 lore.add(
-                        ChatColor.YELLOW
-                                + "Plugin Up To Date"
+                        ChatColor.GRAY
+                                + "Latest: "
+                                + ChatColor.WHITE
+                                + latestVersion
+                );
+
+                lore.add("");
+
+                lore.add(
+                        ChatColor.GREEN
+                                + "Status: Up To Date"
                 );
 
             }
