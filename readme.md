@@ -9,26 +9,6 @@
 
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21%2B-green)
 ![Platform](https://img.shields.io/badge/Platform-Paper-orange)
-![Storage](https://img.shields.io/badge/Storage-SQLite-blue)
-![Status](https://img.shields.io/badge/Status-Stable-success)
-![Development](https://img.shields.io/badge/Development-Active-brightgreen)
-![RS Ecosystem](https://img.shields.io/badge/RS-Ecosystem-purple)
-
-</p>
-
----
-
-<p align="center">
-  <h1 align="center">RS-MobStand</h1>
-  <p align="center">
-    Automated Mob Farming for Modern Minecraft Servers
-  </p>
-</p>
-
-<p align="center">
-
-![Minecraft](https://img.shields.io/badge/Minecraft-1.21%2B-green)
-![Platform](https://img.shields.io/badge/Platform-Paper-orange)
 ![Storage](https://img.shields.io/badge/Storage-YAML-blue)
 ![Status](https://img.shields.io/badge/Status-Stable-success)
 ![Development](https://img.shields.io/badge/Development-Active-brightgreen)
