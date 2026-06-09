@@ -44,8 +44,9 @@ RS-MobStand replaces those systems with a clean, configurable solution that is e
 
 ## Documentation
 
-See the documentation inside the docs folder:
+See the complete documentation:
 
+- [Home](docs/Home.md)
 - [Installation](docs/Installation.md)
 - [Creating Your First ItemMagnet](docs/Creating-Your-First-ItemMagnet.md)
 - [Filters](docs/Filters.md)
@@ -54,6 +55,7 @@ See the documentation inside the docs folder:
 - [Admin Guide](docs/Admin-Guide.md)
 - [Troubleshooting](docs/Troubleshooting.md)
 - [Storage and Persistence](docs/Storage-and-Persistence.md)
+- [Permissions](docs/Permissions.md)
 - [Changelog](docs/Changelog.md)
 
 # Features
@@ -209,22 +211,17 @@ If you encounter a bug or have a feature request, please open an issue in the Gi
 
 # License
 
-Copyright © 2026 RSScripting
+# License
 
-All rights reserved.
+This project is licensed under the MIT License.
 
-This project may not be copied, modified, redistributed, or sold without explicit written permission from RSScripting.
+See the LICENSE file for details.
 
 ---
 
 <p align="center">
   Built by RSScripting
 </p>
-
-<p align="center">
-  Generate • Collect • Transport • Store
-</p>
-
 
 <p align="center">
   Generate • Collect • Transport • Store
