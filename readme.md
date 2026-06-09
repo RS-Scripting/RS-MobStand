@@ -42,22 +42,6 @@ RS-MobStand replaces those systems with a clean, configurable solution that is e
 
 ---
 
-## Documentation
-
-See the complete documentation:
-
-- [Home](docs/Home.md)
-- [Installation](docs/Installation.md)
-- [Creating Your First ItemMagnet](docs/Creating-Your-First-MobStand.md)
-- [Filters](docs/Filters.md)
-- [Radius Settings](docs/Radius-Settings.md)
-- [Pause and Resume](docs/Pause-and-Resume.md)
-- [Admin Guide](docs/Admin-Guide.md)
-- [Troubleshooting](docs/Troubleshooting.md)
-- [Storage and Persistence](docs/Storage-and-Persistence.md)
-- [Permissions](docs/Permissions.md)
-- [Changelog](docs/Changelog.md)
-
 # Features
 
 ### Automated Mob Farming
