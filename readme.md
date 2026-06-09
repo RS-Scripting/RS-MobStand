@@ -3,7 +3,7 @@
   <p align="center">
     Automated Mob Farming for Modern Minecraft Servers
   </p>
-</p>
+
 
 <p align="center">
 
