@@ -9,7 +9,7 @@
 
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21%2B-green)
 ![Platform](https://img.shields.io/badge/Platform-Paper-orange)
-![Storage](https://img.shields.io/badge/Storage-SQLite-blue)
+![Storage](https://img.shields.io/badge/Storage-YAML-blue)
 ![Status](https://img.shields.io/badge/Status-Stable-success)
 ![Development](https://img.shields.io/badge/Development-Active-brightgreen)
 ![RS Ecosystem](https://img.shields.io/badge/RS-Ecosystem-purple)
@@ -22,7 +22,7 @@
 
 **RS-MobStand** is a powerful automated mob farming plugin designed for Minecraft servers that want reliable resource generation without the performance impact of traditional mob farms.
 
-Players place and configure Mob Stands to generate mob drops while server owners maintain full control through configurable settings, permissions, filters, upgrades, and administrative tools.
+Players convert Armor Stands into Mob Stands and configure them through intuitive GUI menus while server owners maintain full control through configurable settings, permissions, filters, and administrative tools.
 
 Built from the ground up with performance, scalability, and long-term server operation in mind.
 
@@ -32,13 +32,13 @@ Built from the ground up with performance, scalability, and long-term server ope
 
 Traditional mob farms often create:
 
-- Excessive entity counts
-- Server lag
-- Chunk-loading issues
-- Complex redstone systems
-- Difficult balancing
+* Excessive entity counts
+* Server lag
+* Chunk-loading issues
+* Complex redstone systems
+* Difficult balancing
 
-RS-MobStand replaces those systems with a clean, configurable, database-backed solution that is easy for players to use and easy for administrators to manage.
+RS-MobStand replaces those systems with a clean, configurable solution that is easy for players to use and easy for administrators to manage.
 
 ---
 
@@ -46,15 +46,15 @@ RS-MobStand replaces those systems with a clean, configurable, database-backed s
 
 ### Automated Mob Farming
 
-Generate mob drops without traditional mob grinders.
+Manage nearby mobs without traditional mob grinders.
 
 ### Dynamic GUI Menus
 
 Simple and intuitive inventory-based interfaces.
 
-### Advanced Filtering
+### Adult & Baby Filters
 
-Control mob behavior with configurable options.
+Configure which mobs are affected by each Mob Stand.
 
 ### Radius Controls
 
@@ -62,11 +62,15 @@ Fine-tune stand operation and efficiency.
 
 ### Leave Alive Support
 
-Maintain mobs while still controlling automation.
+Maintain a configurable number of mobs while still automating management.
 
-### SQLite Storage
+### YAML Storage
 
-Reliable persistent data storage.
+Reliable persistent storage that survives server restarts.
+
+### Armor Stand Ownership
+
+Protect Mob Stands from unauthorized access.
 
 ### Chunk-Safe Design
 
@@ -132,31 +136,14 @@ Together these plugins create a complete automated resource collection and logis
 
 ---
 
-# Commands
-
-| Command | Description |
-|----------|-------------|
-| `/rsms` | Open the Mob Stand menu |
-| `/rsms admin` | Open administrative controls |
-
----
-
-# Permissions
-
-| Permission | Description |
-|------------|-------------|
-| `rs.mobstand.use` | Allows use of Mob Stands |
-| `rs.mobstand.admin` | Administrative access |
-
----
-
 # Installation
 
 1. Download the latest release.
 2. Place the jar into your server's `plugins` folder.
 3. Restart the server.
 4. Configure settings as desired.
-5. Enjoy automated mob farming.
+5. Convert an Armor Stand into a Mob Stand.
+6. Enjoy automated mob management.
 
 ---
 
@@ -166,24 +153,24 @@ RS-MobStand was designed with long-term server operation in mind.
 
 Features include:
 
-- SQLite persistence
-- Chunk-safe processing
-- Efficient task management
-- Optimized stand handling
-- Minimal entity overhead
+* YAML persistence
+* Chunk-safe processing
+* Efficient task management
+* Optimized stand handling
+* Minimal server overhead
 
 ---
 
 # Development Status
 
-| Component | Status |
-|------------|---------|
-| Core System | ✅ Complete |
-| GUI System | ✅ Complete |
-| SQLite Storage | ✅ Complete |
+| Component            | Status     |
+| -------------------- | ---------- |
+| Core System          | ✅ Complete |
+| GUI System           | ✅ Complete |
+| YAML Storage         | ✅ Complete |
 | Administrative Tools | ✅ Complete |
-| Optimization | ✅ Complete |
-| Public Release | 🚧 Pending |
+| Optimization         | ✅ Complete |
+| Public Release       | 🚧 Pending |
 
 ---
 
@@ -191,7 +178,7 @@ Features include:
 
 ### Big Pappa
 
-Project Creator  
+Project Creator
 Founder of RSScripting
 
 ### Atlas
@@ -219,6 +206,11 @@ This project may not be copied, modified, redistributed, or sold without explici
 <p align="center">
   Built by RSScripting
 </p>
+
+<p align="center">
+  Generate • Collect • Transport • Store
+</p>
+
 
 <p align="center">
   Generate • Collect • Transport • Store
