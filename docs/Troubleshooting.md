@@ -1,107 +1,265 @@
 # Troubleshooting
 
-This guide covers common issues and their solutions.
+This guide covers the most common issues encountered when using RS-MobStand and provides steps to resolve them.
 
 ---
 
-# Machine Not Collecting Items
+# Mob Stand Will Not Convert
 
-## Target Container Missing
+### Symptoms
 
-The assigned container no longer exists.
+* Sneak-right-clicking an Armor Stand does nothing.
+* The conversion does not occur.
 
-Symptoms:
+### Check
 
-* Machine shows a warning state.
-* Items remain on the ground.
+Verify that:
 
-Solution:
+* You are holding a Stick.
+* You are sneaking.
+* You have the required permission.
+* The target is a normal Armor Stand.
 
-* Replace the container.
-* Reassign the target container if necessary.
+### Solution
 
----
+Ensure you are:
 
-## Container Full
-
-The target container has no available space.
-
-Symptoms:
-
-* Items remain on the ground.
-* Machine appears operational.
-
-Solution:
-
-* Remove items from the container.
-* Expand storage capacity.
-
-RS-ItemMagnet automatically resumes collection when space becomes available.
+```text id="6rj03f"
+Sneaking
++
+Holding a Stick
++
+Right-Clicking an Armor Stand
+```
 
 ---
 
-## Filter Blocking Items
+# Cannot Open Mob Stand Menu
 
-The item is not allowed by the machine's filter configuration.
+### Symptoms
 
-Solution:
+* Right-clicking a Mob Stand does nothing.
+* The menu does not appear.
 
-* Review filter settings.
-* Add the desired item to the filter.
+### Check
 
----
+Verify that:
 
-## Item Outside Radius
+* The stand is already converted.
+* You own the Mob Stand.
+* You have permission to use Mob Stands.
 
-The item is located outside the configured collection area.
+### Solution
 
-Solution:
+Try interacting with a Mob Stand that you own.
 
-* Increase radius.
-* Move the machine closer to the collection area.
+Administrators can bypass ownership restrictions using:
 
----
-
-# Machine Lost After Restart
-
-RS-ItemMagnet stores machine data in SQLite.
-
-Machine data should automatically persist across:
-
-* Server restarts
-* Chunk unloads
-* Player relogs
-
-If data is missing, contact the server administrator.
+```text id="jhy0k0"
+rsmobstand.admin
+```
 
 ---
 
-# Ownership Problems
+# "You Do Not Own This Mob Stand"
 
-Only the machine owner may modify settings.
+### Symptoms
 
-Administrators with appropriate permissions may bypass ownership restrictions.
+You receive an ownership error message.
+
+### Cause
+
+The Mob Stand belongs to another player.
+
+### Solution
+
+* Use your own Mob Stand.
+* Ask the owner for assistance.
+* Have an administrator assist you.
+
+Administrators with:
+
+```text id="3u4r6l"
+rsmobstand.admin
+```
+
+may bypass ownership restrictions.
+
+---
+
+# Mob Stand Is Not Processing Mobs
+
+### Check Pause Status
+
+Verify the Mob Stand is not paused.
+
+Open:
+
+```text id="50s1d7"
+Main Menu
+    ↓
+Pause / Resume
+```
+
+and ensure processing is enabled.
+
+---
+
+### Check Radius
+
+Verify the configured radius is large enough to reach the intended mobs.
+
+Open:
+
+```text id="kce0j6"
+Main Menu
+    ↓
+Radius
+```
+
+and review the current value.
+
+---
+
+### Check Filters
+
+Verify the mob type is enabled in the appropriate filter menu.
+
+Review:
+
+* Adult Filters
+* Baby Filters
+
+If a mob is disabled in filters, it will be ignored.
+
+---
+
+### Check Leave Alive
+
+Verify the Leave Alive setting is not preventing additional processing.
+
+Example:
+
+```text id="j11jv0"
+Leave Alive: 10
+```
+
+If only ten matching mobs exist, no additional processing will occur.
+
+---
+
+# Mobs Are Being Ignored
+
+### Cause
+
+The mob type may be disabled in filters.
+
+### Solution
+
+Open:
+
+```text id="yzr39t"
+Adult Filters
+```
+
+or
+
+```text id="jq4z32"
+Baby Filters
+```
+
+and verify the desired mob type is enabled.
+
+---
+
+# Gravity Is Not Working As Expected
+
+### Cause
+
+Gravity may be disabled.
+
+### Solution
+
+Open:
+
+```text id="r5g7t1"
+Main Menu
+    ↓
+Gravity
+```
+
+and verify the current setting.
+
+---
+
+# Configuration Changes Are Not Taking Effect
+
+### Cause
+
+The configuration may not have been reloaded.
+
+### Solution
+
+Administrators can use:
+
+```text id="db0vtg"
+Admin Menu
+    ↓
+Reload Config
+```
+
+after making configuration changes.
+
+---
+
+# Version Status Shows "Unable To Check"
+
+### Cause
+
+The plugin could not contact the update source.
+
+Possible reasons:
+
+* No internet access
+* GitHub unavailable
+* Repository is private
+
+### Solution
+
+This does not affect plugin operation.
+
+RS-MobStand will continue functioning normally.
+
+---
+
+# Server Performance Concerns
+
+### Recommendations
+
+* Avoid excessively large radius values.
+* Use filters to limit processing.
+* Only create Mob Stands where needed.
+* Review server performance regularly.
 
 ---
 
 # Still Need Help?
 
-If the problem persists:
+Before requesting support, gather:
 
-1. Verify plugin version.
-2. Review server logs.
-3. Open an issue on the GitHub repository.
+* Minecraft Version
+* Paper Version
+* RS-MobStand Version
+* Screenshots (if applicable)
+* Console Errors (if applicable)
+
+Providing this information helps resolve issues more quickly.
 
 ---
 
-# Known Behavior
+# Related Pages
 
-## Full Containers
-
-When a container becomes full:
-
-* Items remain on the ground.
-* No items are lost.
-* Collection automatically resumes when storage space becomes available.
-
-This behavior is intentional.
+* Installation
+* Permissions
+* Admin Guide
+* Main Menu

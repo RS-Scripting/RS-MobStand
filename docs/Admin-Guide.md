@@ -1,67 +1,164 @@
 # Admin Guide
 
-This guide covers administrative controls and management of RS-ItemMagnet.
+The Admin Menu provides server operators with administrative controls and diagnostic information for RS-MobStand.
+
+This menu is intended for server staff and administrators.
 
 ---
 
-# Administrative Access
+# Accessing the Admin Menu
 
-Administrators with the appropriate permissions can manage ItemMagnets regardless of ownership.
+The Admin button appears within the Main Menu for authorized users.
 
----
+Open:
 
-# Common Administrative Tasks
+```text id="u56k0l"
+Main Menu
+    ↓
+Admin
+```
 
-## Inspect Machines
-
-View machine settings and configuration.
-
-## Modify Machines
-
-Adjust:
-
-* Radius
-* Filters
-* Assigned containers
-* Operational state
-
-## Remove Machines
-
-Remove invalid, abandoned, or problematic ItemMagnets.
+to access administrative functions.
 
 ---
 
-# Ownership System
+# Administrative Features
 
-RS-ItemMagnet uses ownership protection.
+Depending on your server configuration and plugin version, the Admin Menu may contain various management and diagnostic tools.
 
-Normally only the owner may modify a machine.
+---
 
-Administrators can bypass ownership restrictions when necessary.
+# Reload Configuration
+
+The Reload Configuration option allows administrators to reload the plugin configuration without restarting the server.
+
+This is useful when:
+
+* Adjusting plugin settings
+* Testing configuration changes
+* Applying updates to configuration files
+
+### When To Use Reload
+
+After editing:
+
+```text id="k7y2gj"
+config.yml
+```
+
+you can reload the plugin to apply changes immediately.
+
+---
+
+# Plugin Version Information
+
+The Admin Menu displays plugin version information.
+
+Information may include:
+
+* Installed Version
+* Latest Available Version
+* Update Status
+
+Possible status values:
+
+```text id="4m7j1f"
+Up To Date
+```
+
+The installed version matches the latest available version.
+
+```text id="awpjol"
+Update Available
+```
+
+A newer version is available.
+
+```text id="hrsd1g"
+Unable To Check
+```
+
+The plugin could not reach the update source.
+
+This may occur when:
+
+* Internet access is unavailable
+* The update source is inaccessible
+* The repository is private
+
+---
+
+# Ownership Bypass
+
+Administrators may bypass normal ownership restrictions.
+
+This allows staff to:
+
+* Inspect Mob Stands
+* Modify configurations
+* Troubleshoot player issues
+
+without needing ownership of the Mob Stand.
 
 ---
 
 # Troubleshooting Player Issues
 
-Common causes of collection problems:
+When assisting players:
 
-* Missing target container
-* Full container
-* Incorrect filter settings
-* Items outside collection radius
+### Verify Ownership
+
+Ensure the player owns the Mob Stand or has appropriate permissions.
+
+### Verify Filters
+
+Incorrect filter settings are a common cause of unexpected behavior.
+
+### Verify Radius
+
+Confirm the Mob Stand is scanning the intended area.
+
+### Verify Pause Status
+
+A paused Mob Stand will not process mobs.
 
 ---
 
 # Best Practices
 
-Use administrative controls sparingly.
+### Reload Sparingly
 
-Allow players to manage their own automation systems whenever possible.
+Frequent reloads are generally unnecessary.
+
+### Test Configuration Changes
+
+Verify changes on a test stand before making server-wide adjustments.
+
+### Keep Backups
+
+Maintain backups of configuration files before making major changes.
+
+### Monitor Updates
+
+Review plugin updates periodically for bug fixes and new features.
 
 ---
 
-# Next Step
+# Security
 
-Continue with:
+Administrative access should only be granted to trusted staff members.
 
-[Troubleshooting](Troubleshooting.md)
+Administrative permissions may allow:
+
+* Bypassing ownership protection
+* Accessing administrative controls
+* Modifying player Mob Stands
+
+---
+
+# Related Pages
+
+* Permissions
+* Troubleshooting
+* Main Menu
+* Installation

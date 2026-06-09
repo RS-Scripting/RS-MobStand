@@ -1,20 +1,22 @@
 # Installation
 
-This guide explains how to install RS-ItemMagnet on your Paper Minecraft server.
+This guide explains how to install RS-MobStand on your Minecraft server.
 
 ---
 
 # Requirements
 
+RS-MobStand requires:
+
 * Minecraft 1.21+
 * Paper Server
-* Java 21+
+* Java 21 or newer
 
 ---
 
 # Download
 
-Download the latest RS-ItemMagnet release from the GitHub Releases page.
+Download the latest RS-MobStand release from the official GitHub repository.
 
 ---
 
@@ -22,77 +24,84 @@ Download the latest RS-ItemMagnet release from the GitHub Releases page.
 
 ## Step 1
 
-Stop your Minecraft server.
+Stop your server.
 
 ---
 
 ## Step 2
 
-Copy the RS-ItemMagnet jar file into your server's:
+Place:
 
-```text
-plugins/
+```text id="xx4q8l"
+RS-MobStand-x.x.x.jar
 ```
 
-directory.
+into your server's:
+
+```text id="hbg7va"
+plugins
+```
+
+folder.
 
 ---
 
 ## Step 3
 
-Start your server.
+Start the server.
 
-During startup RS-ItemMagnet will:
-
-* Create its data folder
-* Create its SQLite database
-* Create required database tables
-* Register commands and permissions
+RS-MobStand will automatically generate its configuration files.
 
 ---
 
 ## Step 4
 
-Verify successful startup.
+Verify the plugin loads successfully.
 
-You should see messages similar to:
+You should see startup messages indicating RS-MobStand has been enabled.
 
-```text
-[RS-ItemMagnet] SQLite database initialized.
-[RS-ItemMagnet] Database tables initialized.
-[RS-ItemMagnet] RS-ItemMagnet Enabled
+---
+
+## Step 5
+
+Configure settings if desired.
+
+Any configuration changes can be applied using:
+
+```text id="f9icq7"
+Admin Menu
+    ↓
+Reload Config
 ```
+
+or by restarting the server.
 
 ---
 
 # Updating
 
-To update RS-ItemMagnet:
+To update:
 
 1. Stop the server.
-2. Replace the existing jar file.
+2. Replace the existing jar.
 3. Start the server.
 
-Machine data and configuration are preserved automatically.
+Your Mob Stand data and configuration will remain intact.
 
 ---
 
-# Uninstalling
+# Verifying Installation
 
-To remove RS-ItemMagnet:
+Create a test Armor Stand.
 
-1. Stop the server.
-2. Remove the plugin jar.
-3. Remove the RS-ItemMagnet data folder if desired.
+Sneak and right-click it while holding a Stick.
 
-Warning:
-
-Removing the data folder will permanently delete all ItemMagnet data.
+If the Armor Stand converts successfully, the installation is complete.
 
 ---
 
-# Next Step
+# Related Pages
 
-Continue with:
-
-[Creating Your First ItemMagnet](Creating-Your-First-ItemMagnet.md)
+* Creating Your First Mob Stand
+* Permissions
+* Troubleshooting

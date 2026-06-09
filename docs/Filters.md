@@ -1,107 +1,191 @@
 # Filters
 
-Filters allow ItemMagnets to collect only specific items.
+Filters determine which mobs a Mob Stand will manage.
 
-This allows multiple ItemMagnets to operate in the same area while collecting different resources.
+Using filters allows you to target specific mob types while ignoring others.
+
+Each Mob Stand maintains separate filter lists for:
+
+* Adult Mobs
+* Baby Mobs
+
+This provides precise control over farm behavior and mob management.
+
+---
+
+# Adult Filters
+
+Adult Filters control which adult mobs may be processed.
+
+Only enabled adult mob types are considered by the Mob Stand.
+
+Example:
+
+```text id="6kiz54"
+Cow      ✓ Enabled
+Pig      ✓ Enabled
+Chicken  ✗ Disabled
+```
+
+Result:
+
+```text id="mgj55p"
+Cows and Pigs may be processed.
+Chickens are ignored.
+```
+
+---
+
+# Baby Filters
+
+Baby Filters control which baby mobs may be processed.
+
+This allows baby mobs to be treated differently from adults.
+
+Example:
+
+```text id="gqz7ir"
+Baby Cow      ✗ Disabled
+Adult Cow     ✓ Enabled
+```
+
+Result:
+
+```text id="8jlwmr"
+Adult cows may be processed.
+Baby cows are ignored.
+```
+
+This is particularly useful for breeding operations.
 
 ---
 
 # Why Use Filters?
 
-Without filters:
+Filters provide flexibility and precision.
 
-```text
-ItemMagnet
-→ Collects Everything
+Common uses include:
+
+* Separating breeding stock
+* Managing specific farm animals
+* Protecting decorative mobs
+* Controlling resource production
+* Supporting specialized farm layouts
+
+---
+
+# Opening Filters
+
+Open:
+
+```text id="ybxbik"
+Main Menu
+    ↓
+Adult Filters
 ```
 
-With filters:
+or
 
-```text
-ItemMagnet A
-→ Cobblestone
+```text id="7p2qcz"
+Main Menu
+    ↓
+Baby Filters
+```
 
-ItemMagnet B
-→ Iron
+to access the desired filter menu.
 
-ItemMagnet C
-→ Redstone
+---
+
+# Enabling a Filter
+
+When a mob filter is enabled:
+
+```text id="0rmr5g"
+Enabled
+```
+
+the Mob Stand is allowed to manage that mob type.
+
+---
+
+# Disabling a Filter
+
+When a mob filter is disabled:
+
+```text id="v6knu8"
+Disabled
+```
+
+the Mob Stand completely ignores that mob type.
+
+---
+
+# Example Farm Setup
+
+### Breeding Farm
+
+Adult Filters:
+
+```text id="16mubg"
+Cow ✓
+Pig ✓
+```
+
+Baby Filters:
+
+```text id="w1cgrh"
+Cow ✗
+Pig ✗
+```
+
+Result:
+
+```text id="ikccfc"
+Adults may be managed.
+Babies are protected until they mature.
 ```
 
 ---
 
-# Configuring Filters
+### Single Species Farm
 
-Open the machine menu.
+Adult Filters:
 
-Select:
-
-```text
-Filters
+```text id="akd7zm"
+Cow ✓
+Pig ✗
+Chicken ✗
+Sheep ✗
 ```
 
-Add or remove items from the filter list as desired.
+Result:
+
+```text id="5of87d"
+Only cows are managed.
+```
 
 ---
 
-# Typical Uses
+# Tips
 
-## Mob Farms
+### Use Leave Alive Together With Filters
 
-Collect:
+Combining filters with Leave Alive settings provides maximum control.
 
-* Bones
-* Arrows
-* Rotten Flesh
+### Separate Different Farms
 
-Ignore:
+Use filters to prevent one Mob Stand from affecting unrelated mobs.
 
-* Player-dropped items
+### Protect Breeding Stock
 
----
-
-## Mining Operations
-
-Collect:
-
-* Cobblestone
-* Stone
-* Ores
-
-Ignore:
-
-* Other farm resources
+Disable baby filters when maintaining breeding populations.
 
 ---
 
-## Storage Sorting
+# Related Pages
 
-Use multiple ItemMagnets with different filters to automatically route resources into separate storage systems.
-
----
-
-# Troubleshooting
-
-Item not being collected?
-
-Verify:
-
-* Item is included in the filter
-* Item is within range
-* Target container has available space
-
----
-
-# Best Practices
-
-Use filters whenever multiple ItemMagnets operate in the same area.
-
-This creates cleaner and more predictable automation systems.
-
----
-
-# Next Step
-
-Continue with:
-
-[Pause and Resume](Pause-and-Resume.md)
+* Main Menu
+* Radius Settings
+* Leave Alive Settings
+* Gravity Settings
+* Pause and Resume

@@ -1,80 +1,110 @@
-# RS-ItemMagnet Documentation
+# RS-MobStand Wiki
 
-Welcome to the official RS-ItemMagnet documentation.
+Welcome to the official RS-MobStand documentation.
 
-RS-ItemMagnet is an automated item collection plugin for Paper Minecraft servers. It allows players to create ItemMagnets that collect dropped items and deliver them directly into designated storage containers.
+RS-MobStand transforms ordinary Armor Stands into configurable Mob Stands capable of managing nearby mobs through an intuitive graphical interface.
 
-Built for performance, reliability, multiplayer compatibility, and long-term server operation.
+Designed for survival servers, RS-MobStand provides a lightweight and configurable alternative to traditional mob farm systems while maintaining excellent server performance.
 
 ---
 
 # Features
 
-* Automated item collection
-* Configurable collection radius
-* Advanced item filtering
-* Container assignment and reassignment
-* Ownership protection
-* Pause and resume controls
-* SQLite persistence
-* Chunk-safe operation
-* Multiplayer support
-* Administrative controls
+### Mob Stand Conversion
+
+Convert ordinary Armor Stands into fully functional Mob Stands.
+
+### Radius Control
+
+Configure how far each Mob Stand scans for mobs.
+
+### Leave Alive Support
+
+Specify how many mobs remain alive while processing continues.
+
+### Adult Filters
+
+Control which adult mobs are managed by a Mob Stand.
+
+### Baby Filters
+
+Control which baby mobs are managed by a Mob Stand.
+
+### Gravity Toggle
+
+Enable or disable gravity for individual Mob Stands.
+
+### Pause / Resume
+
+Temporarily disable Mob Stand processing without removing the stand.
+
+### Ownership Protection
+
+Only the owner (or an administrator) can modify a Mob Stand.
+
+### Persistent Storage
+
+All Mob Stand settings survive server restarts.
+
+### Administrative Controls
+
+Built-in administrative tools for server operators.
 
 ---
 
-# Quick Start
+# Getting Started
 
-1. Place a Lodestone.
-2. Convert it into an RS-ItemMagnet.
-3. Assign a target container.
-4. Configure radius and filters.
-5. Drop items within range.
-6. Watch items get collected automatically.
+1. Place an Armor Stand.
+2. Sneak and right-click the Armor Stand while holding a Stick.
+3. Convert the Armor Stand into a Mob Stand.
+4. Configure the stand using the menu system.
+5. Begin managing nearby mobs.
 
 ---
 
-# Documentation Index
+# Wiki Navigation
 
-## Getting Started
+## Player Guides
 
-* [Installation](Installation.md)
-* [Creating Your First ItemMagnet](Creating-Your-First-ItemMagnet.md)
-
-## Player Guide
-
-* [Filters](Filters.md)
-* [Radius Settings](Radius-Settings.md)
-* [Pause and Resume](Pause-and-Resume.md)
+* Creating Your First Mob Stand
+* Main Menu
+* Radius Settings
+* Leave Alive Settings
+* Gravity Settings
+* Filters
+* Pause and Resume
 
 ## Administration
 
-* [Admin Guide](Admin-Guide.md)
-* [Troubleshooting](Troubleshooting.md)
-
-## Technical Information
-
-* [Storage and Persistence](Storage-and-Persistence.md)
-* [Changelog](Changelog.md)
+* Installation
+* Permissions
+* Admin Guide
+* Troubleshooting
+* Changelog
 
 ---
 
 # RS Ecosystem
 
-RS-ItemMagnet is part of the RS Ecosystem.
+RS-MobStand is part of the RS Ecosystem.
 
 ```text
+Generate
+   │
+   ▼
 RS-MobStand
-    ↓ Generate
-
+   │
+Collect
+   ▼
 RS-ItemMagnet
-    ↓ Collect
-
+   │
+Transport
+   ▼
 RS-Auger
-    ↓ Transport
-
+   │
+Store
+   ▼
 RS-Warehouse
-    ↓ Store
 ```
 
 Together these plugins create a complete automated resource collection and logistics system.
@@ -83,10 +113,16 @@ Together these plugins create a complete automated resource collection and logis
 
 # Support
 
-If you encounter a bug or have a feature request, please open an issue in the GitHub repository.
+If you encounter an issue:
+
+1. Verify your plugin version.
+2. Check the Troubleshooting page.
+3. Gather any console errors.
+4. Open a GitHub issue if necessary.
 
 ---
 
-Built by RSScripting
+# License
 
-Big Pappa • Atlas
+MIT License
+Copyright © 2026 RSScripting

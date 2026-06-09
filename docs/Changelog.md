@@ -1,40 +1,56 @@
 # Changelog
 
-## Version 1.0.3
-
-### Infrastructure
-
-* Migrated to Maven single-source versioning
-* Added GitHub update checking
-* Standardized version display system
-* Added GitHub repository support
-
-### Multiplayer
-
-* Fixed player selection conflicts
-* Added UUID-based selection tracking
-* Improved multi-user machine configuration
-
-### Reliability
-
-* Verified restart persistence
-* Verified chunk unload/reload handling
-* Verified player relog persistence
-* Verified machine recreation behavior
-
-### Administration
-
-* Improved version information display
-* Standardized update status reporting
-
-### Documentation
-
-* Added README documentation
-* Added MIT License
-* Added complete documentation system
+All notable changes to RS-MobStand will be documented here.
 
 ---
 
-## Future Releases
+# Unreleased
 
-Future changes will be documented here.
+## Documentation
+
+* GitHub repository created
+* Wiki created
+* Installation guide added
+* Player documentation added
+* Administrative documentation added
+
+---
+
+# Version 1.0.4
+
+## Version Management
+
+* Migrated to Maven-based version management
+* Implemented single source of truth using pom.xml
+* Removed version.txt dependency
+* Added GitHub version checking
+
+## Administrative Improvements
+
+* Added improved version status display
+* Added update availability detection
+* Added "Unable To Check" status handling
+
+## Stability
+
+* Verified multiplayer menu isolation
+* Confirmed per-player menu tracking
+* Confirmed ownership protection behavior
+
+## Documentation
+
+* Added README improvements
+* Added GitHub Wiki
+* Added installation and support documentation
+
+---
+
+# Future
+
+Planned ecosystem integrations:
+
+* RS-ItemMagnet
+* RS-Auger
+* RS-Warehouse
+
+Additional features and improvements will be documented as development continues.

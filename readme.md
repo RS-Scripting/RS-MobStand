@@ -48,7 +48,7 @@ See the complete documentation:
 
 - [Home](docs/Home.md)
 - [Installation](docs/Installation.md)
-- [Creating Your First ItemMagnet](docs/Creating-Your-First-ItemMagnet.md)
+- [Creating Your First ItemMagnet](docs/Creating-Your-First-MobStand.md)
 - [Filters](docs/Filters.md)
 - [Radius Settings](docs/Radius-Settings.md)
 - [Pause and Resume](docs/Pause-and-Resume.md)

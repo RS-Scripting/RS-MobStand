@@ -1,82 +1,86 @@
 # Radius Settings
 
-Radius settings control how far an RS-ItemMagnet can detect and collect dropped items.
+The Radius setting controls how far a Mob Stand searches for nearby mobs.
+
+Adjusting the radius allows you to balance coverage, efficiency, and farm design.
 
 ---
 
-# What Is Radius?
+# What Radius Does
 
-The collection radius determines the area around the ItemMagnet where dropped items can be detected.
+The Mob Stand scans for matching mobs within its configured radius.
 
-Items outside the configured radius will be ignored.
+Only mobs located within this area are eligible for processing.
 
 ---
 
 # Increasing Radius
 
-Larger radii allow the machine to collect items from a wider area.
+A larger radius allows a Mob Stand to cover a wider area.
 
 Benefits:
 
-* Larger collection area
-* Fewer machines required
-* Better coverage for large farms
+* Covers larger farms
+* Detects mobs farther away
+* Reduces the need for multiple Mob Stands
 
 Considerations:
 
-* More items may be scanned
-* Larger collection zones may overlap
+* May include mobs you did not intend to manage
+* May overlap with other Mob Stands
 
 ---
 
 # Decreasing Radius
 
-Smaller radii restrict collection to nearby items.
+A smaller radius limits the Mob Stand to a more focused area.
 
 Benefits:
 
-* More precise collection
-* Better separation between machines
-* Easier farm specialization
+* Greater precision
+* Easier farm separation
+* Better control over specific mob groups
 
 ---
 
-# Choosing the Right Radius
+# Choosing a Radius
 
-Small Farms:
+The ideal radius depends on your farm design.
 
-```text
-Small Radius
-```
+### Small Farms
 
-Large Farms:
+Use a smaller radius to target a specific enclosure.
 
-```text
-Medium to Large Radius
-```
+### Large Farms
 
-Industrial Automation Systems:
+Use a larger radius to cover the entire farm area.
 
-```text
-Use the smallest radius necessary
-```
+### Multiple Mob Stands
 
-to maintain predictable item routing.
+When using several Mob Stands nearby, consider reducing radius values to prevent excessive overlap.
 
 ---
 
-# Troubleshooting
+# Radius Limits
 
-If items are not being collected:
+Server administrators may configure a maximum radius.
 
-* Verify the item is inside the configured radius
-* Verify filters allow the item
-* Verify the target container has available space
+If a radius exceeds the server limit, the Mob Stand will automatically use the highest allowed value.
 
 ---
 
-# Next Step
+# Tips
 
-Continue with:
+* Start small and increase as needed.
+* Avoid unnecessarily large radii.
+* Verify the Mob Stand is affecting the intended mobs.
+* Use filters alongside radius settings for maximum control.
 
-[Filters](Filters.md)
+---
+
+# Related Pages
+
+* Main Menu
+* Leave Alive Settings
+* Filters
+* Pause and Resume

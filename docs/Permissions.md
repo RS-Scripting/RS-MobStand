@@ -1,74 +1,171 @@
 # Permissions
 
-RS-ItemMagnet supports permissions for players and administrators.
+RS-MobStand uses permissions to control who can create, manage, and administer Mob Stands.
+
+Server owners can use these permissions to grant access to players, moderators, and administrators.
 
 ---
 
 # Player Permissions
 
-## rsim.use
-
-Allows players to use RS-ItemMagnet features.
-
-Default:
+## Use RS-MobStand
 
 ```text
-true
+rsmobstand.use
+```
+
+Allows a player to:
+
+* Convert Armor Stands into Mob Stands
+* Open Mob Stand menus
+* Configure owned Mob Stands
+* Use normal plugin functionality
+
+Recommended for:
+
+```text
+All Players
 ```
 
 ---
 
 # Administrative Permissions
 
-## rsim.admin
-
-Provides access to administrative functions.
-
-Default:
+## Admin Access
 
 ```text
-op
+rsmobstand.admin
 ```
 
-Allows:
+Allows a player to:
 
-* Administrative menus
-* Ownership bypass
-* Machine management
-* Troubleshooting assistance
+* Access the Admin Menu
+* Bypass ownership restrictions
+* Modify Mob Stands owned by other players
+* Assist with troubleshooting
+
+Recommended for:
+
+```text
+Administrators
+Moderators
+Trusted Staff
+```
 
 ---
 
 # Ownership Protection
 
-Machine owners retain control of their ItemMagnets.
+Even with normal use permissions, players may only modify Mob Stands they own.
 
-Players without appropriate permissions cannot:
+Ownership is automatically assigned when a player converts an Armor Stand into a Mob Stand.
 
-* Modify settings
-* Change filters
-* Reassign containers
-* Remove machines
+Without administrative permissions:
+
+```text
+Player A
+    └─ Can modify Player A's Mob Stands
+
+Player B
+    └─ Cannot modify Player A's Mob Stands
+```
+
+With:
+
+```text
+rsmobstand.admin
+```
+
+ownership restrictions may be bypassed.
 
 ---
 
-# Recommended Setup
+# Recommended Permission Setup
+
+## Survival Servers
 
 Players:
 
 ```text
-rsim.use
+rsmobstand.use
 ```
 
-Staff:
+Administrators:
 
 ```text
-rsim.admin
+rsmobstand.use
+rsmobstand.admin
 ```
 
 ---
 
-# Related Documentation
+## Staff Teams
+
+Moderators:
+
+```text
+rsmobstand.use
+rsmobstand.admin
+```
+
+Administrators:
+
+```text
+rsmobstand.use
+rsmobstand.admin
+```
+
+---
+
+# Permission Plugins
+
+RS-MobStand works with common permission systems including:
+
+* LuckPerms
+* PermissionsEx
+* GroupManager
+* Other Bukkit-compatible permission managers
+
+---
+
+# Troubleshooting
+
+### Players Cannot Create Mob Stands
+
+Verify:
+
+```text
+rsmobstand.use
+```
+
+has been granted.
+
+---
+
+### Staff Cannot Access Admin Features
+
+Verify:
+
+```text
+rsmobstand.admin
+```
+
+has been granted.
+
+---
+
+### Player Cannot Modify Their Mob Stand
+
+Verify:
+
+* The player owns the Mob Stand.
+* The player has the required permissions.
+* The Mob Stand was successfully converted.
+
+---
+
+# Related Pages
 
 * Admin Guide
+* Creating Your First Mob Stand
 * Troubleshooting
