@@ -1,11 +1,6 @@
-<p align="center">
-  <h1 align="center">RS-MobStand</h1>
-  <p align="center">
-    Automated Mob Farming for Modern Minecraft Servers
-  </p>
+# RS-MobStand
 
-
-<p align="center">
+**Automated Mob Farming for Modern Minecraft Servers**
 
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21%2B-green)
 ![Platform](https://img.shields.io/badge/Platform-Paper-orange)
@@ -14,199 +9,118 @@
 ![Development](https://img.shields.io/badge/Development-Active-brightgreen)
 ![RS Ecosystem](https://img.shields.io/badge/RS-Ecosystem-purple)
 
-</p>
-
----
+------------------------------------------------------------------------
 
 ## Overview
 
-**RS-MobStand** is a powerful automated mob farming plugin designed for Minecraft servers that want reliable resource generation without the performance impact of traditional mob farms.
+**RS-MobStand** is a powerful automated mob killing plugin.
 
-Players convert Armor Stands into Mob Stands and configure them through intuitive GUI menus while server owners maintain full control through configurable settings, permissions, filters, and administrative tools.
+Players convert Armor Stands into Mob Stands and configure them through
+intuitive GUI menus while server owners maintain full control through
+configurable settings, permissions, filters, and administrative tools.
 
-Built from the ground up with performance, scalability, and long-term server operation in mind.
+------------------------------------------------------------------------
 
----
+## Documentation
 
-## Why RS-MobStand?
+See the complete documentation:
 
-Traditional mob farms often create:
-
-* Excessive entity counts
-* Server lag
-* Chunk-loading issues
-* Complex redstone systems
-* Difficult balancing
-
-RS-MobStand replaces those systems with a clean, configurable solution that is easy for players to use and easy for administrators to manage.
-
----
+-   [Home](docs/01%29%20Getting%20Started/A%29%20Home.md)
+-   [Installation](docs/01%29%20Getting%20Started/B%29%20Installation.md)
+-   [Creating Your First MobStand](docs/01%29%20Getting%20Started/C%29%20Creating%20Your%20First%20MobStand.md)
+-   [Filters](docs/01%29%20Getting%20Started/D%29%20Filters.md)
+-   [Radius](docs/01%29%20Getting%20Started/E%29%20Radius.md)
+-   [Pause and Resume](docs/01%29%20Getting%20Started/F%29%20Pause%20And%20Resume.md)
+-   [Admin Guide](docs/01%29%20Getting%20Started/G%29%20Admin%20Menu.md)
 
 # Features
 
 ### Automated Mob Farming
-
 Manage nearby mobs without traditional mob grinders.
 
 ### Dynamic GUI Menus
-
 Simple and intuitive inventory-based interfaces.
 
 ### Adult & Baby Filters
-
 Configure which mobs are affected by each Mob Stand.
 
 ### Radius Controls
+Fine-tune stand operation and efficiency. Mob Stands scan within the
+configured horizontal radius and only 2 blocks above and 2 blocks below
+the stand's base level.
 
-Fine-tune stand operation and efficiency.
+### View Radius
+Visualize the configured Mob Stand scan area in-world with a temporary
+particle outline visible only to the player who activates it.
 
 ### Leave Alive Support
+Maintain a configurable number of mobs while still automating
+management.  Custom named mobs are completely ignored.
 
-Maintain a configurable number of mobs while still automating management.
+### Individual Arm Poses
+When arms are enabled, configure the Main Hand and Off Hand
+independently with five available poses: Down, 1/4 Down, Straight Out,
+1/4 Up, and Straight Up.
+
+### Display Name Control
+Show or hide the Mob Stand's in-world display name directly from the Mob
+Stand menu.
+
+### Paused on Conversion
+Newly converted Mob Stands start paused, allowing their settings to be
+configured before automated mob management begins.
+
+### Mob Whitelists
+Adult and Baby mob filters act as whitelists. A mob must be configured
+for the appropriate age category before a Mob Stand will affect it.
 
 ### YAML Storage
-
 Reliable persistent storage that survives server restarts.
 
 ### Armor Stand Ownership
-
 Protect Mob Stands from unauthorized access.
 
-### Chunk-Safe Design
+### Vanilla Conversion 
+Mob Stands can be converted back into standard vanilla Armor Stands,
+removing the RS-MobStand functionality.
 
-Built to behave correctly across chunk loads and unloads.
-
-### Performance Focused
-
-Designed to minimize server impact while maximizing functionality.
 
 ### Administrative Tools
 
 Powerful management tools for staff and server operators.
 
----
-
-# RS Ecosystem
-
-RS-MobStand is the resource generation component of the growing **RS Ecosystem**.
-
-```text
-┌─────────────┐
-│ RS-MobStand │
-└──────┬──────┘
-       │ Generate
-       ▼
-┌──────────────┐
-│ RS-ItemMagnet│
-└──────┬───────┘
-       │ Collect
-       ▼
-┌───────────┐
-│ RS-Auger  │
-└─────┬─────┘
-      │ Transport
-      ▼
-┌─────────────┐
-│ RS-Warehouse│
-└─────────────┘
-       Store
-```
-
-Together these plugins create a complete automated resource collection and logistics system.
-
----
-
-# Screenshots
-
-### Main Menu
-
-*Coming Soon*
-
-### Mob Stand Interface
-
-*Coming Soon*
-
-### Administrative Menu
-
-*Coming Soon*
-
-### In-World Mob Stand
-
-*Coming Soon*
-
----
+------------------------------------------------------------------------
 
 # Installation
 
-1. Download the latest release.
-2. Place the jar into your server's `plugins` folder.
-3. Restart the server.
-4. Configure settings as desired.
-5. Convert an Armor Stand into a Mob Stand.
-6. Enjoy automated mob management.
+1.  Download the latest release.
+2.  Place the jar into your server's `plugins` folder.
+3.  Restart the server.
+4.  Configure settings as desired.
+5.  Convert an Armor Stand into a Mob Stand.
+6.  Enjoy automated mob management.
 
----
+------------------------------------------------------------------------
 
-# Performance
-
-RS-MobStand was designed with long-term server operation in mind.
-
-Features include:
-
-* YAML persistence
-* Chunk-safe processing
-* Efficient task management
-* Optimized stand handling
-* Minimal server overhead
-
----
-
-# Development Status
-
-| Component            | Status     |
-| -------------------- | ---------- |
-| Core System          | ✅ Complete |
-| GUI System           | ✅ Complete |
-| YAML Storage         | ✅ Complete |
-| Administrative Tools | ✅ Complete |
-| Optimization         | ✅ Complete |
-| Public Release       | 🚧 Pending |
-
----
 
 # Contributors
 
 ### Big Pappa
-
-Project Creator
-Founder of RSScripting
+Project Creator Founder of RSScripting
 
 ### Atlas
-
 Architecture, Design & Development Support
 
----
+------------------------------------------------------------------------
 
 # Support
+If you encounter a bug or have a feature request, please open an issue
+in the GitHub repository.
 
-If you encounter a bug or have a feature request, please open an issue in the GitHub repository.
-
----
-
-# License
+------------------------------------------------------------------------
 
 # License
-
 This project is licensed under the MIT License.
-
 See the LICENSE file for details.
 
----
-
-<p align="center">
-  Built by RSScripting
-</p>
-
-<p align="center">
-  Generate • Collect • Transport • Store
-</p>
+------------------------------------------------------------------------
