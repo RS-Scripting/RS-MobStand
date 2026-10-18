@@ -63,6 +63,11 @@ without affecting:
 
 Each age category must be configured independently.
 
+## Note:
+You can leave gaps in the filter by using
+Air:
+  Icon: AIR
+
 ---
 
 ## Whitelist Behavior
