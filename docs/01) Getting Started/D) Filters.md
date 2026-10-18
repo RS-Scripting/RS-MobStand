@@ -65,8 +65,12 @@ Each age category must be configured independently.
 
 ## Note:
 You can leave gaps in the filter by using
-Air:
+AIR_1:
   Icon: AIR
+AIR_2:
+  Icon: AIR
+
+  etc etc.
 
 ---
 
